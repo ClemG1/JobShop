@@ -1,0 +1,87 @@
+&-----Test BlocksOfCriticalPath()-----
+Resource Order : 
+
+(Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+(Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+(Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+Critical Path : 
+(1, 0)
+(2, 1)
+(2, 2)
+(1, 2)
+
+Blocks : 
+'machine = 1 firstTask = 0 lastTask = 1
+'machine = 2 firstTask = 1 lastTask = 2
+-----Test applyOn()-----
+Previous order : 
+(Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+(Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+(Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+New order : 
+(Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+(Machine 1 : (2, 1) ; (1, 0) ; (0, 2) ; 
+(Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+Previous order : 
+(Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+(Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+(Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+New order : 
+(Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+(Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+(Machine 2 : (0, 0) ; (1, 2) ; (2, 2) ; 
+
+-----Test neighbors()-----
+Swap : 
+machine = 1 t1 = 0 t2 = 1
+Swap : 
+machine = 2 t1 = 1 t2 = 2
+-----Test Glouton Solver-----
+-----Test SPT Order-----
+1 0 1 0 1 0 
+-----Test LPT Order-----
+0 1 0 1 1 0 
+-----Test SRPT Order-----
+0 1 0 1 1 0 
+-----Test LRPT Order-----
+0 1 1 0 1 0 
+	-----Test Resource Order-----
+	Test init() :
+	Resource 0 | (0,0) | (1,1) | 
+	Resource 1 | (1,0) | (0,1) | 
+	Resource 2 | (0,2) | (1,2) | 
+	
+	Resource 0 | (0,0) | (1,1) | 
+	Resource 1 | (0,1) | (1,0) | 
+	Resource 2 | (0,2) | (1,2) | 
+	
+	Test toSchedule() :
+	jobshop.Schedule@347002b3
+	jobshop.Schedule@220ad987
+	Test fromSchedule() :
+	Resource 0 | (0,0) | (1,1) | 
+	Resource 1 | (1,0) | (0,1) | 
+	Resource 2 | (0,2) | (1,2) | 
+	
+	Resource 0 | (0,0) | (1,1) | 
+	Resource 1 | (0,1) | (1,0) | 
+	Resource 2 | (0,2) | (1,2) | 
+	
+
+-----Test Job Numbers-----
+
+-----Test toSchedule-----
+
+jobshop.Schedule@509e268f
+
+jobshop.Schedule@29263d38
+
+-----Test fomSchedule-----
+
+[0, 1, 0, 1, 0, 1]
+
+[0, 0, 0, 1, 1, 1]

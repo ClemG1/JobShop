@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jobshop.solvers.DescentSolverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-07T07:23:52" hostname="gehin-laptop" time="0.037">
+  <properties/>
+  <testcase name="TestBlocksOfCriticalPath" classname="jobshop.solvers.DescentSolverTest" time="0.027"/>
+  <testcase name="TestApplyOn" classname="jobshop.solvers.DescentSolverTest" time="0.006"/>
+  <testcase name="TestNeighbors" classname="jobshop.solvers.DescentSolverTest" time="0.004"/>
+  <system-out><![CDATA[-----Test BlocksOfCriticalPath()-----
+Resource Order : 
+
+Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+Critical Path : 
+(1, 0)
+(2, 1)
+(2, 2)
+(1, 2)
+Blocks : 
+machine = 1 firstTask = 0 lastTask = 1
+machine = 2 firstTask = 1 lastTask = 2
+-----Test applyOn()-----
+Previous order : 
+Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+New order : 
+Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+Machine 1 : (2, 1) ; (1, 0) ; (0, 2) ; 
+Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+Previous order : 
+Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+Machine 2 : (0, 0) ; (2, 2) ; (1, 2) ; 
+
+New order : 
+Machine 0 : (2, 0) ; (0, 1) ; (1, 1) ; 
+Machine 1 : (1, 0) ; (2, 1) ; (0, 2) ; 
+Machine 2 : (0, 0) ; (1, 2) ; (2, 2) ; 
+
+-----Test neighbors()-----
+Swap : 
+machine = 1 t1 = 0 t2 = 1
+Swap : 
+machine = 2 t1 = 1 t2 = 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
