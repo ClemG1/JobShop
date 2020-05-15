@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jobshop.solvers.GloutonTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-07T07:23:52" hostname="gehin-laptop" time="0.004">
+<testsuite name="jobshop.solvers.GloutonTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-15T08:38:43" hostname="gehin-laptop" time="0.003">
   <properties/>
-  <testcase name="TestGlouton" classname="jobshop.solvers.GloutonTests" time="0.004"/>
+  <testcase name="TestGlouton" classname="jobshop.solvers.GloutonTests" time="0.003"/>
   <system-out><![CDATA[-----Test Glouton Solver-----
 -----Test SPT Order-----
 1 0 1 0 1 0 
