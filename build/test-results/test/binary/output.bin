@@ -60,8 +60,8 @@ Blocks :
 	Resource 2 | (0,2) | (1,2) | 
 	
 	Test toSchedule() :
-	jobshop.Schedule@1c9674e6
-	jobshop.Schedule@78a48abf
+	jobshop.Schedule@347002b3
+	jobshop.Schedule@220ad987
 	Test fromSchedule() :
 	Resource 0 | (0,0) | (1,1) | 
 	Resource 1 | (1,0) | (0,1) | 
@@ -76,9 +76,9 @@ Blocks :
 
 -----Test toSchedule-----
 
-jobshop.Schedule@18e9d444
+jobshop.Schedule@509e268f
 
-jobshop.Schedule@5e3bf253
+jobshop.Schedule@29263d38
 
 -----Test fomSchedule-----
 

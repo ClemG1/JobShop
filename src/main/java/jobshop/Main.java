@@ -33,7 +33,7 @@ public class Main {
         solvers.put("descent", new DescentSolver());
         solvers.put("taboo", new TabooSolver());
         solvers.put("randomGlouton", new RandomGloutonSolver());
-        solvers.put("descentMultiStart", new DescentMultiStartSolver(4));
+        solvers.put("descentMultiStart", new DescentMultiStartSolver(8));
     }
 
 

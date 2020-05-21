@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jobshop.solvers.DescentSolverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-15T08:38:42" hostname="gehin-laptop" time="0.039">
+<testsuite name="jobshop.solvers.DescentSolverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-17T06:29:52" hostname="gehin-laptop" time="0.061">
   <properties/>
-  <testcase name="TestBlocksOfCriticalPath" classname="jobshop.solvers.DescentSolverTest" time="0.028"/>
+  <testcase name="TestBlocksOfCriticalPath" classname="jobshop.solvers.DescentSolverTest" time="0.051"/>
   <testcase name="TestApplyOn" classname="jobshop.solvers.DescentSolverTest" time="0.006"/>
   <testcase name="TestNeighbors" classname="jobshop.solvers.DescentSolverTest" time="0.004"/>
   <system-out><![CDATA[-----Test BlocksOfCriticalPath()-----
